@@ -11,10 +11,14 @@ class App extends Component {
           <h1>React Hooks Exercises</h1>
         </header>
         <div className="exercises">
-          <h3>Exercise 1 - Counter</h3>
-          <Counter />
-          <h3>Exercise 2 - Form</h3>
-          <Form />
+          <div className="exercise-container">
+            <h3>Exercise 1 - Counter</h3>
+            <Counter />
+          </div>
+          <div className="exercise-container">
+            <h3>Exercise 2 - Form</h3>
+            <Form />
+          </div>
         </div>
       </div>
     );
