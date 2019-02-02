@@ -15,12 +15,18 @@ export default class Counter extends Component {
     });
   };
 
+  handleReset = () => {
+    this.setState({ count: 0 });
+  };
+
   render() {
     return (
       <div>
         <button onClick={this.handleDecrement}>-</button>
         <span>{this.state.count}</span>
         <button onClick={this.handleIncrement}>+</button>
+        <br />
+        <button onClick={this.handleReset}>Reset</button>
       </div>
     );
   }
