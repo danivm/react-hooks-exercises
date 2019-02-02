@@ -7,6 +7,8 @@ The exercise is refactor all the components to [React Hooks](https://reactjs.org
 ## Setup
 
 ```
+git clone https://github.com/danivm/react-hooks-exercises.git
+cd react-hooks-exercises
 npm install
 npm start
 ```
