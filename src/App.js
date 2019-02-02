@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Counter from "./components/counter";
+import Form from "./components/form";
 
 class App extends Component {
   render() {
@@ -12,6 +13,8 @@ class App extends Component {
         <div className="exercises">
           <h3>Exercise 1 - Counter</h3>
           <Counter />
+          <h3>Exercise 2 - Form</h3>
+          <Form />
         </div>
       </div>
     );
