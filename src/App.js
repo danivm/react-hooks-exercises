@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Counter from "./components/counter";
 import Form from "./components/form";
+import Coordinates from "./components/coordinates";
 
 class App extends Component {
   render() {
@@ -18,6 +19,10 @@ class App extends Component {
           <div className="exercise-container">
             <h3>Exercise 2 - Form</h3>
             <Form />
+          </div>
+          <div className="exercise-container">
+            <h3>Exercise 3 - Coordinates</h3>
+            <Coordinates />
           </div>
         </div>
       </div>
