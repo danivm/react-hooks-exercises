@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { MyContext } from "./context";
 import Counter from "./components/counter";
 import Form from "./components/form";
 import Coordinates from "./components/coordinates";
+import { Avatar } from "./components/avatar";
 
 class App extends Component {
   render() {
@@ -21,6 +23,12 @@ class App extends Component {
             <h3 className="exercise-title">Exercise 3 - Coordinates</h3>
             <Coordinates />
           </div>
+          <MyContext.Provider value={{ user: "JSCoders" }}>
+            <div className="exercise-container">
+              <h3 className="exercise-title">Exercise 4 - Context</h3>
+              <Avatar />
+            </div>
+          </MyContext.Provider>
         </div>
       </div>
     );
