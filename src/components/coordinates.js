@@ -21,7 +21,6 @@ export default class Coordinates extends Component {
   render() {
     return (
       <div>
-        <p>Coordinates:</p>
         <p>
           {this.state.x} - {this.state.y}
         </p>
