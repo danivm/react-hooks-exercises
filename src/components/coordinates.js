@@ -1,30 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import useCoordinates from "../hooks/coordinates";
 
-export default class Coordinates extends Component {
-  state = { x: 0, y: 0 };
+export default function Coordinates() {
+  const { coordinates } = useCoordinates();
 
-  componentDidMount() {
-    window.addEventListener("mousemove", this.handleMouseMove);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("mousemove", this.handleMouseMove);
-  }
-
-  handleMouseMove = event => {
-    this.setState({
-      x: event.clientX,
-      y: event.clientY
-    });
-  };
-
-  render() {
-    return (
-      <div>
-        <p>
-          {this.state.x} - {this.state.y}
-        </p>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <p>
+        {coordinates.x} - {coordinates.y}
+      </p>
+    </div>
+  );
 }
