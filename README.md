@@ -1,7 +1,8 @@
 # React Hooks Exercises
 
+[Meetup](https://www.meetup.com/es-ES/js-coders/events/258865309)
+
 This project is a collection of exercises.
-All the components are build with React `16.7.0`.
 The exercise is refactor all the components to [React Hooks](https://reactjs.org/docs/hooks-intro.html).
 
 ## Setup
